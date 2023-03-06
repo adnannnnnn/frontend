@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    <!-- text -->
+    <form>
+        <label for="ad">Adınız:</label>
+        <br>
+        <input type="text" id="ad"  name="ad"><br><br>
+        <label for="soyad">Soyadınız:</label><br>
+        <input type="text" id="soyad"  name="soyad">
+    </form>
+<br>
+<!--radio button -->
+    <form>
+        <input type="radio" id="html" name="language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="language" value="css">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="language">
+        <label for="javascript">Javascript</label>
+     </form><br>
+<!-- checkbox -->
+
+     <form>
+        <input type="checkbox" id="bisiklet"
+        name="bisiklet" value="bisiklet">
+        <label for="bisiklet">Bisiklet</label>
+        
+        <input type="checkbox" id="araba"
+        name="araba" value="araba">
+        <label for="araba">Araba</label>
+
+        <input type="checkbox" id="bot"
+        name="bot" value="bot">
+        <label for="bot">Bot</label>
+    </form>
+    </form>
+        <label>isim</label>
+        <input type="text"><br>
+        <label>soyisim</label>
+        <input type="text"><br>
+        <input type="submit" value="button">
+    </form>
+<br>
+    <!-- dropbox -->
+
+    <form>
+         <label for="cars">hangi aracı tercih edersiniz</label>
+        <select id="cars" name="cars">
+         <option value="volvo">volvo</option>
+         <option value="Fiat">Fiat</option>
+         <option value="Audi">Audi</option>
+        </select>
+        <input type="submit" value="gönder">
+    </form><br>
+
+    <!--textarea-->
+
+    <form>
+        <textarea type="message" rows="10" cols="30">istediğiniz yorumu buraya ekleyin</textarea><br>
+        <input type="submit" value="submit">
+    </form><br>
+
+    <form>
+        <br>
+        <button type="button" onclick="alert('merhaba')">click me!</button>
+    </form>
+<br>
+    <form>
+        <fieldset>
+            <legend>personel</legend>
+            <label>first name:</label>
+            <input type="text"><br>
+            <label>last name:</label>
+            <input type="text"><br>
+        </fieldset>
+    </form>
+
+    <h2>datalist elemanları</h2>
+    <form>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="internet explorer">
+            <option value="firefox">
+            <option value="chrome">
+            <option value="safari">
+
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <label for="color">favori rengini seç</label>
+    <input type="color" id="color" name="color">
+
+    <form>
+        <label for="dgunu">dogum gunu</label>
+        <input type="date" id="dgunu">
+        <input type="reset">
+     </form>
+
+     <form>
+
+        <label for="datemax">2023-12-31 den önce tarih gir</label>
+        <input type="date" id="datemax" maz="2023-12-31"><br>
+        <label for="datemin"> 1970-01-01 den sonra tarih gir</label>
+        <input type="date" id="datemin" min="1970-01-01"><br><br>
+    </form>
+
+    <form>
+    <label>email giriniz</label>
+    <input type="email">
+    <input type="submit" value="submit">
+    </form>
+
+    <label>volume (0-50)</label>
+    <input type="range" min="0" max="50" step="10" value="10">
+<form>
+    <label>ülke kodu giriniz:</label>
+        <input type="text" pattern="[A-Za-z]" {3} title="geçerli üç harf giriniz">
+        <input type="submit" value="submit">
+</form>
+
+<video width="320" height="240" controls autoplay muted> 
+    <source src="metallica.mp4" type="video/mp4"/> video desteklenmiyor
+</video>
+<br>
+<audio controls muted>
+    <source src="metallica.mp3" type="audio/mpeg"/>
+</audio>
+
+<iframe width="300" height="315" src="https:www.youtube.com/embed/tgbnymz7vqy"></iframe>
+</body>
+</html>
